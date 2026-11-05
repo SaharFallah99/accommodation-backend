@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ارائه ERD سامانه رزرو اقامتگاه</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--text:#1b2233;--mut:#5b6475;--line:#e0dccf;--blue:#2b5fd9;--org:#d9661f;--pk:#d99a00;--uk:#1b9a63;--dk:#111a2e;--dkt:#f4f1ea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151c;--card:#1a1f2b;--text:#e6e9f0;--mut:#98a1b5;--line:#2c3446;--blue:#6b97ff;--org:#f09a5c;--dk:#0b0f19}}
+:root[data-theme="dark"]{--bg:#12151c;--card:#1a1f2b;--text:#e6e9f0;--mut:#98a1b5;--line:#2c3446;--blue:#6b97ff;--org:#f09a5c;--dk:#0b0f19}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.8;display:flex;flex-direction:column;overflow:hidden}
+#deck{flex:1;position:relative;min-height:0}
+.s{position:absolute;inset:0;overflow:auto;padding:28px clamp(16px,5vw,72px) 24px;display:none;flex-direction:column;gap:18px}
+.s.on{display:flex;animation:f .35s}
+@keyframes f{from{opacity:0;transform:translateX(-14px)}to{opacity:1}}
+h1{font-size:clamp(1.8rem,5vw,3.4rem);line-height:1.4;margin:0}
+h2{font-size:clamp(1.3rem,3vw,2.1rem);margin:0}
+.cover{background:var(--dk);color:var(--dkt);justify-content:center}
+.cover p{color:#e8a46a;font-size:clamp(1rem,2.4vw,1.6rem);margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:16px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.c h3{margin:0;color:var(--blue);font:700 1.15rem monospace;direction:ltr;text-align:right}
+.c .fa{color:var(--mut);font-size:.9rem}
+.f{direction:ltr;font:12.5px monospace;display:grid;grid-template-columns:auto 1fr auto;gap:2px 8px;margin:8px 0;align-items:center}
+.f i{color:var(--mut);font-style:normal;font-size:11px}
+.b{font:700 9px monospace;padding:1px 4px;border-radius:3px;color:#fff;margin-right:3px}
+.PK{background:var(--pk)}.FK{background:var(--blue)}.UK{background:var(--uk)}
+.why{font-size:.92rem;border-top:1px dashed var(--line);padding-top:8px;margin:6px 0 0}
+.why b{color:var(--org)}
+.dark{background:var(--dk);color:var(--dkt)}.dark h3{color:#e8a46a;font-family:inherit}
+.dark li{margin:6px 0}
+.mono{font-family:monospace;direction:ltr;unicode-bidi:embed}
+.wrap{overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+svg{display:block;min-width:1100px;width:100%;height:auto;direction:ltr}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right}
+th{color:var(--mut);font-weight:700;position:sticky;top:0;background:var(--card)}
+nav{display:flex;align-items:center;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:var(--card)}
+button{font:inherit;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:10px;padding:6px 16px;cursor:pointer}
+button:hover{border-color:var(--blue)}
+#dots{flex:1;display:flex;justify-content:center;gap:7px}
+#dots span{width:9px;height:9px;border-radius:50%;background:var(--line);cursor:pointer}
+#dots span.on{background:var(--blue)}
+#n{color:var(--mut);font-size:.85rem;min-width:44px;text-align:center}
+</style>
+</head>
+<body>
+<div id="deck"></div>
+<nav><button id="nx">بعدی ←</button><span id="n"></span><div id="dots"></div><button id="pv">→ قبلی</button><button id="fs" title="تمام‌صفحه">⛶</button></nav>
+<script>
+// ---------- data ----------
+const T=[
+{n:'users',t:'کاربران (مهمان و ادمین)',x:20,y:20,f:[['id','BIGINT','PK'],['full_name','VARCHAR(120)'],['email','VARCHAR(160)','UK'],['phone','VARCHAR(20)','UK'],['password_hash','VARCHAR(255)'],['role','ENUM(user,admin)'],['national_id','VARCHAR(20)'],['avatar_url','VARCHAR(255)'],['is_verified','BOOLEAN'],['created_at','DATETIME'],['updated_at','DATETIME']],
+ w:'پنل جدا برای میزبان نداریم، پس یک جدول واحد با فیلد role کافی است. رمز فقط به‌صورت هش ذخیره می‌شود و ایمیل و موبایل یکتا هستند.'},
+{n:'refresh_tokens',t:'توکن‌های ورود',x:20,y:340,f:[['id','BIGINT','PK'],['user_id','BIGINT','FK','users.id'],['token_hash','VARCHAR(255)','UK'],['expires_at','DATETIME'],['revoked','BOOLEAN'],['created_at','DATETIME']],
+ w:'نشست هر دستگاه جدا نگه داشته می‌شود تا خروج یا ابطال توکن بدون تغییر رمز ممکن باشد.'},
+{n:'bookings',t:'رزروها',x:330,y:20,f:[['id','BIGINT','PK'],['user_id','BIGINT','FK','users.id'],['accommodation_id','BIGINT','FK','accommodations.id'],['check_in_date','DATE'],['check_out_date','DATE'],['guests_count','INT'],['total_price','DECIMAL(12,0)'],['status','ENUM(pending,confirmed,cancelled,completed)'],['created_at','DATETIME']],
+ w:'تاریخ رفت و برگشت روی رزرو ثبت می‌شود. total_price همان لحظه ذخیره می‌شود تا تغییر قیمت بعدی روی رزروهای قبلی اثر نگذارد.'},
+{n:'reviews',t:'نظرات',x:330,y:330,f:[['id','BIGINT','PK'],['user_id','BIGINT','FK','users.id'],['accommodation_id','BIGINT','FK','accommodations.id'],['booking_id','BIGINT','FK,UK','bookings.id'],['rating','TINYINT (1-5)'],['comment','TEXT'],['created_at','DATETIME'],['is_approved','BOOLEAN']],
+ w:'نظر به یک رزرو وصل است و booking_id یکتاست؛ پس فقط کسی که واقعاً اقامت کرده، فقط یک بار نظر می‌دهد.'},
+{n:'availability',t:'تقویم و دسترسی',x:330,y:600,f:[['id','BIGINT','PK'],['accommodation_id','BIGINT','FK','accommodations.id'],['date','DATE'],['is_available','BOOLEAN'],['price_override','DECIMAL(12,0)']],
+ w:'فقط استثناها (روز بسته، قیمت ایام پیک) ثبت می‌شود، نه همه روزهای سال. هنگام رزرو، تداخل تاریخ با این جدول و bookings چک می‌شود.'},
+{n:'accommodations',t:'اقامتگاه‌ها',x:640,y:20,f:[['id','BIGINT','PK'],['category_id','BIGINT','FK','categories.id'],['created_by','BIGINT','FK','users.id'],['title','VARCHAR(200)'],['slug','VARCHAR(220)','UK'],['description','TEXT'],['price_per_night','DECIMAL(12,0)'],['capacity','INT'],['bedrooms','INT'],['beds','INT'],['bathrooms','INT'],['check_in_time','TIME'],['check_out_time','TIME'],['min_nights','INT'],['max_nights','INT'],['status','ENUM(active,inactive)'],['avg_rating','DECIMAL(2,1)'],['reviews_count','INT'],['created_at','DATETIME']],
+ w:'فیلدهای فیلتر (قیمت، ظرفیت، اتاق) ستون ساده‌اند تا ایندکس سریع باشد. avg_rating از قبل محاسبه می‌شود تا هر بار از نظرات میانگین نگیریم. created_by همان ادمین است.'},
+{n:'accommodation_amenities',t:'امکانات اقامتگاه (جدول واسط)',x:640,y:520,f:[['accommodation_id','BIGINT','PK,FK','accommodations.id'],['amenity_id','BIGINT','PK,FK','amenities.id']],
+ w:'امکانات بین اقامتگاه‌ها مشترک است، پس رابطه چند به چند به جدول واسط نیاز دارد. کلید اصلی ترکیبی از دو ستون است و فیلتر امکانات با یک join انجام می‌شود.'},
+{n:'categories',t:'دسته‌بندی‌ها',x:950,y:20,f:[['id','BIGINT','PK'],['parent_id','BIGINT','FK','categories.id'],['name','VARCHAR(100)'],['slug','VARCHAR(120)','UK'],['icon','VARCHAR(100)']],
+ w:'دسته در جدول جدا است تا ادمین بدون تغییر ساختار دسته جدید بسازد. parent_id زیردسته را ممکن می‌کند.'},
+{n:'locations',t:'موقعیت مکانی',x:950,y:210,f:[['id','BIGINT','PK'],['accommodation_id','BIGINT','FK,UK','accommodations.id'],['province','VARCHAR(80)'],['city','VARCHAR(80)'],['address','VARCHAR(300)'],['latitude','DECIMAL(9,6)'],['longitude','DECIMAL(9,6)'],['postal_code','VARCHAR(20)']],
+ w:'رابطه یک به یک و جدا از اقامتگاه است تا جدول اصلی سبک بماند. مختصات برای نقشه و شهر برای جستجو است.'},
+{n:'accommodation_images',t:'تصاویر',x:950,y:450,f:[['id','BIGINT','PK'],['accommodation_id','BIGINT','FK','accommodations.id'],['url','VARCHAR(255)'],['is_cover','BOOLEAN'],['sort_order','INT']],
+ w:'هر اقامتگاه چند عکس دارد. is_cover عکس شاخص لیست و sort_order ترتیب گالری است.'},
+{n:'amenities',t:'امکانات',x:950,y:640,f:[['id','BIGINT','PK'],['name','VARCHAR(100)','UK'],['icon','VARCHAR(100)']],
+ w:'فهرست مرجع امکانات (وای‌فای، استخر، پارکینگ) که ادمین مدیریت می‌کند.'}
+];
+const W=250,HH=34,RH=22,M={};T.forEach(t=>{t.h=HH+t.f.length*RH;M[t.n]=t});
+const fl=f=>(f[2]||'').split(',').filter(Boolean);
+const $=(h,c)=>{const e=document.createElement('section');e.className='s '+(c||'');e.innerHTML=h;return e};
+const badges=f=>fl(f).map(k=>`<span class="b ${k}">${k}</span>`).join('');
+const card=t=>`<div class="c"><h3>${t.n}</h3><div class="fa">${t.t}</div><div class="f">${t.f.map(f=>`<span>${badges(f)}</span><span>${f[0]}</span><i>${f[1]}</i>`).join('')}</div><p class="why"><b>چرا؟</b> ${t.w}</p></div>`;
+const grp=(id,title,names,extra='')=>$(`<h2>${title}</h2><div class="grid">${names.map(n=>card(M[n])).join('')}${extra}</div>`);
+// ---------- slides ----------
+const S=[];
+S.push($(`<h1>طراحی پایگاه داده<br>سامانه رزرو اقامتگاه آنلاین</h1><p>نمودار ERD کامل، ۱۰ موجودیت، کلیدها، روابط و دلیل هر تصمیم طراحی</p><p style="color:#b9b4a8;font-size:1rem">احراز هویت، دسته‌بندی، جستجو و فیلتر، رفت و برگشت، نقشه و نظرات</p>`,'cover'));
+const col=(t,a)=>`<div class="c"><h2 style="color:var(--blue)">${t}</h2>${a.map(n=>`<div style="margin:8px 0"><span class="mono" style="font-weight:700">${n}</span><div class="fa">${M[n].t}</div></div>`).join('')}</div>`;
+S.push($(`<h2>موجودیت‌ها در یک نگاه</h2><div class="grid">${col('هویت و دسترسی',['users','refresh_tokens'])}${col('کاتالوگ اقامتگاه',['categories','accommodations','locations','accommodation_images','amenities','accommodation_amenities'])}${col('رزرو و تعامل',['bookings','availability','reviews'])}</div><p class="fa">هسته سیستم جدول accommodations است؛ بقیه جدول‌ها به آن یا به users وصل می‌شوند.</p>`));
+S.push(grp(0,'کاربران و احراز هویت',['users','refresh_tokens']));
+S.push(grp(0,'دسته‌بندی و اقامتگاه',['categories','accommodations']));
+S.push(grp(0,'موقعیت، تصاویر و امکانات',['locations','accommodation_images','amenities','accommodation_amenities']));
+S.push(grp(0,'رزرو و تقویم',['bookings','availability']));
+S.push(grp(0,'نظرات و جمع‌بندی',['reviews'],`<div class="c dark"><h3>جمع‌بندی طراحی</h3><ul><li>همه روابط ۱ به N با کلید خارجی ساخته شده‌اند.</li><li>ایندکس پیشنهادی: category_id، price_per_night، city، avg_rating.</li><li>فقط ادمین اقامتگاه می‌سازد (created_by).</li><li>وابستگی نظر به رزرو، جلوی نظر ساختگی را می‌گیرد.</li></ul></div>`));
+// ERD slide
+S.push($(`<h2>نمودار ERD کامل</h2><div class="wrap"><svg id="erd" viewBox="0 0 1240 780" xmlns="http://www.w3.org/2000/svg"></svg></div><p class="fa"><span class="b PK">PK</span>کلید اصلی <span class="b FK">FK</span>کلید خارجی <span class="b UK">UK</span>یکتا — خط‌ها رابطه‌اند؛ N سمت کلید خارجی و 1 سمت جدول مرجع است.</p>`));
+// relations slide
+const R=[];T.forEach(s=>s.f.forEach(f=>{if(fl(f).includes('FK')&&f[3]){const k=fl(f).includes('UK')?'1 : 1':'N : 1';R.push(`<tr><td class="mono">${s.n}.${f[0]}</td><td class="mono">${f[3]}</td><td class="mono">${k}</td></tr>`)}}));
+S.push($(`<h2>جدول روابط و کلیدهای خارجی</h2><div class="wrap"><table><tr><th>کلید خارجی (FK)</th><th>جدول مرجع</th><th>رابطه</th></tr>${R.join('')}<tr><td class="mono">accommodations</td><td class="mono">amenities</td><td class="mono">N : N (via accommodation_amenities)</td></tr></table></div>`));
+const deck=document.getElementById('deck');S.forEach(s=>deck.appendChild(s));
+// ---------- ERD drawing ----------
+const NS='http://www.w3.org/2000/svg',svg=document.getElementById('erd');
+const el=(n,a,p,tx)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);if(tx!=null)e.textContent=tx;(p||svg).appendChild(e);return e};
+const v=x=>'var(--'+x+')',lines=el('g',{});
+T.forEach(t=>{const g=el('g',{});
+ el('rect',{x:t.x,y:t.y,width:W,height:t.h,rx:8,fill:v('card'),stroke:v('line'),'stroke-width':1.2},g);
+ el('path',{d:`M${t.x} ${t.y+HH}V${t.y+8}a8 8 0 0 1 8-8H${t.x+W-8}a8 8 0 0 1 8 8V${t.y+HH}Z`,fill:v('blue')},g);
+ el('text',{x:t.x+10,y:t.y+15,fill:'#fff','font-size':12.5,'font-weight':700,'font-family':'monospace'},g,t.n);
+ el('text',{x:t.x+10,y:t.y+29,fill:'#fff','font-size':10.5,opacity:.9,'font-family':'Vazirmatn,Tahoma,sans-serif'},g,t.t);
+ t.f.forEach((f,i)=>{const y=t.y+HH+i*RH,k=fl(f);
+  if(i)el('line',{x1:t.x,x2:t.x+W,y1:y,y2:y,stroke:v('line'),'stroke-width':.6},g);
+  k.forEach((b,j)=>{el('rect',{x:t.x+6+j*25,y:y+5,width:22,height:13,rx:3,fill:v({PK:'pk',FK:'blue',UK:'uk'}[b])},g);
+   el('text',{x:t.x+17+j*25,y:y+15,'text-anchor':'middle','font-size':8.5,'font-weight':700,fill:'#fff','font-family':'monospace'},g,b)});
+  el('text',{x:t.x+8+Math.max(k.length,1)*25+(k.length?0:-8),y:y+15,'font-size':11.5,fill:v('text'),'font-family':'monospace','font-weight':k.includes('PK')?700:400},g,f[0]);
+  el('text',{x:t.x+W-8,y:y+15,'text-anchor':'end','font-size':9.5,fill:v('mut'),'font-family':'monospace'},g,f[1].length>17?f[1].slice(0,16)+'…':f[1])})});
+T.forEach(s=>s.f.forEach((f,i)=>{if(!fl(f).includes('FK')||!f[3])return;
+ const [tn,tc]=f[3].split('.'),d=M[tn],ti=d.f.findIndex(x=>x[0]===tc);
+ const sy=s.y+HH+i*RH+RH/2,ty=d.y+HH+ti*RH+RH/2,one=fl(f).includes('UK')||f[0]==='amenity_id'&&0;
+ let sx,tx,dir,p;
+ if(s.x+W<=d.x){sx=s.x+W;tx=d.x;dir=1}else if(d.x+W<=s.x){sx=s.x;tx=d.x+W;dir=-1}else{sx=s.x+W;tx=d.x+W;dir=1}
+ const lb=(x,y,t)=>el('text',{x,y,'font-size':11,'font-weight':700,fill:v('blue')},lines,t);
+ if(s.x===d.x){p=`M${sx} ${sy}C${sx+45} ${sy},${tx+45} ${ty},${tx} ${ty}`;lb(sx+5,sy-4,one?'1':'N');lb(tx+5,ty-4,'1')}
+ else{p=`M${sx} ${sy}C${sx+dir*50} ${sy},${tx-dir*50} ${ty},${tx} ${ty}`;lb(sx+dir*10-(dir<0?6:0),sy-5,one?'1':'N');lb(tx-dir*10-(dir>0?6:0),ty-5,'1')}
+ el('path',{d:p,fill:'none',stroke:v('mut'),'stroke-width':1.4,opacity:.85},lines);
+ el('circle',{cx:sx,cy:sy,r:3,fill:v('mut')},lines);el('circle',{cx:tx,cy:ty,r:3,fill:v('mut')},lines)}));
+svg.insertBefore(lines,svg.firstChild);
+// ---------- navigation ----------
+let i=0;const dots=document.getElementById('dots'),N=S.length;
+S.forEach((_,k)=>{const d=document.createElement('span');d.onclick=()=>go(k);dots.appendChild(d)});
+function go(k,noHash){i=Math.max(0,Math.min(N-1,k));S.forEach((s,j)=>{s.classList.toggle('on',j===i);dots.children[j].classList.toggle('on',j===i)});
+ S[i].scrollTop=0;document.getElementById('n').textContent=(i+1)+' / '+N;
+ if(!noHash){try{history.replaceState(null,'','#s'+(i+1))}catch(e){}}}
+const fromHash=()=>{const m=/^#s(\d+)$/.exec(location.hash);go(m?+m[1]-1:0,true)};
+addEventListener('hashchange',fromHash);fromHash();
+nx.onclick=()=>go(i+1);pv.onclick=()=>go(i-1);
+fs.onclick=()=>{try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}catch(e){}};
+addEventListener('keydown',e=>{if(['ArrowLeft','PageDown',' '].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowRight','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}if(e.key==='Home')go(0);if(e.key==='End')go(N-1)});
+let tx0=null;deck.addEventListener('touchstart',e=>tx0=e.touches[0].clientX,{passive:true});
+deck.addEventListener('touchend',e=>{if(tx0==null)return;const d=e.changedTouches[0].clientX-tx0;tx0=null;if(Math.abs(d)>70)go(d<0?i+1:i-1)});
+</script>
+</body>
+</html>
