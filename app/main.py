@@ -1,5 +1,5 @@
 from contextlib import asynccontextmanager
-
+from fastapi.security import OAuth2PasswordRequestForm
 from fastapi import Depends, FastAPI, HTTPException, Query, status
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import select
@@ -75,14 +75,41 @@ async def register_user(payload: UserRegister, db: AsyncSession = Depends(get_db
     return user
 
 
+# @app.post("/auth/login", response_model=TokenResponse)
+# async def login_user(payload: UserLogin, db: AsyncSession = Depends(get_db)):
+#     user = await db.scalar(select(User).where(User.email == payload.email))
+#     if not user or not verify_password(payload.password, user.password_hash):
+#         raise HTTPException(status_code=401, detail="Invalid credentials")
+
+#     token = create_access_token(subject=user.email)
+#     return TokenResponse(access_token=token)
+
+
+
 @app.post("/auth/login", response_model=TokenResponse)
-async def login_user(payload: UserLogin, db: AsyncSession = Depends(get_db)):
-    user = await db.scalar(select(User).where(User.email == payload.email))
-    if not user or not verify_password(payload.password, user.password_hash):
-        raise HTTPException(status_code=401, detail="Invalid credentials")
+async def login_user(
+    form_data: OAuth2PasswordRequestForm = Depends(),
+    db: AsyncSession = Depends(get_db)
+):
+    user = await db.scalar(
+        select(User).where(User.email == form_data.username)
+    )
+
+    if not user or not verify_password(
+        form_data.password,
+        user.password_hash
+    ):
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid credentials"
+        )
 
     token = create_access_token(subject=user.email)
-    return TokenResponse(access_token=token)
+
+    return TokenResponse(
+        access_token=token,
+        token_type="bearer"
+    )
 
 
 @app.get("/me", response_model=UserRead)
