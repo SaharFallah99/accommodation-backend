@@ -1,0 +1,57 @@
+{
+  "code": 812386,
+  "title": "ویلا دوخوابه طالشی 7",
+  "check_in": "2026-11-26 14:00",
+  "check_out": "2026-11-29 12:00",
+  "nights": 3,
+  "guests": 2,
+  "payable": 6420000,
+  "price_before_discount": 6420000,
+  "discount": 0,
+  "discount_pct": 0,
+  "installment_4x": 1605000,
+  "instant_booking": true,
+  "per_night": [
+    {
+      "date": "2026-11-26",
+      "day_type": "custom",
+      "night": 2500000,
+      "extra_guest_each": 400000,
+      "total": 2500000
+    },
+    {
+      "date": "2026-11-27",
+      "day_type": "custom",
+      "night": 1960000,
+      "extra_guest_each": 400000,
+      "total": 1960000
+    },
+    {
+      "date": "2026-11-28",
+      "day_type": "custom",
+      "night": 1960000,
+      "extra_guest_each": 400000,
+      "total": 1960000
+    }
+  ],
+  "cancellation": {
+    "policy": "متعادل",
+    "phases": [
+      {
+        "when": "تا 1 آذر",
+        "until": "2026-11-22",
+        "deduction": "10٪ مبلغ شب اول + 10٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 1 آذر تا 5 آذر",
+        "until": "2026-11-26",
+        "deduction": "50٪ مبلغ شب اول + 20٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 5 آذر تا 8 آذر",
+        "until": "2026-11-29",
+        "deduction": "100٪ مبلغ شب‌های سپری شده + 50٪ مبلغ شب‌های باقیمانده"
+      }
+    ]
+  }
+}

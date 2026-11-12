@@ -1,0 +1,70 @@
+{
+  "code": 108324,
+  "similar": [
+    {
+      "code": 734924,
+      "title": "آپارتمان یک خوابه خانه آرمانی ۳",
+      "type": "apartment",
+      "city": "کیش",
+      "province": "هرمزگان",
+      "region": "city",
+      "rating": 4.7,
+      "rating_count": 17,
+      "max_guests": 4,
+      "base_guests": 2,
+      "instant_booking": false,
+      "total_price": 18500000,
+      "price_before_discount": 18500000,
+      "discount_pct": 0,
+      "cheapest_night": 6000000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/840828/10579f27-f49d-490c-b134-57b3bbbf14a6.jpeg",
+      "url": "https://www.jabama.com/stay/apartment-734924?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    },
+    {
+      "code": 735412,
+      "title": "آپارتمان خانه آرمانی۶",
+      "type": "apartment",
+      "city": "کیش",
+      "province": "هرمزگان",
+      "region": "city",
+      "rating": 4.6,
+      "rating_count": 15,
+      "max_guests": 5,
+      "base_guests": 3,
+      "instant_booking": false,
+      "total_price": 18500000,
+      "price_before_discount": 18500000,
+      "discount_pct": 0,
+      "cheapest_night": 6000000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/840828/9ce87d07-9282-4e87-acec-82e21dd4dc14.jpeg",
+      "url": "https://www.jabama.com/stay/apartment-735412?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    },
+    {
+      "code": 465216,
+      "title": "آپارتمان یک خوابه صدف 3",
+      "type": "apartment",
+      "city": "کیش",
+      "province": "هرمزگان",
+      "region": "coastal",
+      "rating": 4.5,
+      "rating_count": 53,
+      "max_guests": 3,
+      "base_guests": 2,
+      "instant_booking": true,
+      "total_price": 30000000,
+      "price_before_discount": 30000000,
+      "discount_pct": 0,
+      "cheapest_night": 10000000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/2710740/72a584c9-481e-45e5-b74c-cab377c0d2ff.jpg",
+      "url": "https://www.jabama.com/stay/apartment-465216?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    }
+  ],
+  "not_free_for_dates": [
+    352081,
+    468324,
+    470500
+  ]
+}

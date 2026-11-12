@@ -1,0 +1,213 @@
+{
+  "destinations": [
+    {
+      "title": "کیش",
+      "subtitle": "استان هرمزگان",
+      "kind": "city",
+      "listings": 312,
+      "search": {
+        "keyword": "city-kish"
+      }
+    },
+    {
+      "title": "کیش پرس کاریز",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 20,
+      "search": {
+        "keyword": "all",
+        "poi": "CHTUQR3gV0JvDgAA2qnbjNi0INm-2LHYsyDaqdin2LHbjNiy"
+      }
+    },
+    {
+      "title": "کیش مال",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 18,
+      "search": {
+        "keyword": "all",
+        "poi": "1lXUQRIUWEJaDgAA2qnbjNi0INmF2KfZhA"
+      }
+    },
+    {
+      "title": "کیش دلفیناریوم",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 1,
+      "search": {
+        "keyword": "all",
+        "poi": "0ArUQdcnWEJrDgAA2qnbjNi0INiv2YTZgduM2YbYp9ix24zZiNmF"
+      }
+    },
+    {
+      "title": "شهرک صدف کیش",
+      "kind": "area",
+      "listings": 200,
+      "search": {
+        "keyword": "all",
+        "areas": [
+          "sadaf-kish"
+        ]
+      }
+    },
+    {
+      "title": "شهرک دامون کیش",
+      "kind": "area",
+      "listings": 10,
+      "search": {
+        "keyword": "all",
+        "areas": [
+          "damoon-kish"
+        ]
+      }
+    },
+    {
+      "title": "دهکده ساحلی کیش",
+      "kind": "area",
+      "listings": 6,
+      "search": {
+        "keyword": "all",
+        "areas": [
+          "kish-coastal-residential-village"
+        ]
+      }
+    },
+    {
+      "title": "پارک آبی کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 205,
+      "search": {
+        "keyword": "all",
+        "poi": "f_rTQevrV0L9DQAA2b7Yp9ix2qkg2KLYqNuMINqp24zYtA"
+      }
+    },
+    {
+      "title": "هتل پارمیدا کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 66,
+      "search": {
+        "keyword": "all",
+        "poi": "6lTUQfkRWEKIAQAA2YfYqtmEINm-2KfYsdmF24zYr9inINqp24zYtA"
+      }
+    },
+    {
+      "title": "سفاری کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 53,
+      "search": {
+        "keyword": "all",
+        "poi": "9VbUQdHUV0JtDgAA2LPZgdin2LHbjCDaqduM2LQ"
+      }
+    },
+    {
+      "title": "نمایش پنگوئن کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 43,
+      "search": {
+        "keyword": "all",
+        "poi": "JGjUQWYPWEKlEgAA2YbZhdin24zYtCDZvtmG2q_ZiNim2YYg2qnbjNi0"
+      }
+    },
+    {
+      "title": "میدان مرکزی کیش",
+      "kind": "poi",
+      "listings": 28,
+      "search": {
+        "keyword": "all",
+        "poi": "H4XXQUjhX0KDCQAA2YXbjNiv2KfZhiDZhdix2qnYstuMINqp24zYtA"
+      }
+    },
+    {
+      "title": "مرکز خرید مرجان کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 26,
+      "search": {
+        "keyword": "all",
+        "poi": "30_UQc_3V0LACAAA2YXYsdqp2LIg2K7YsduM2K8g2YXYsdis2KfZhiDaqduM2LQ"
+      }
+    },
+    {
+      "title": "مرکز خرید پردیس کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 19,
+      "search": {
+        "keyword": "all",
+        "poi": "i2zUQVTjV0LBCAAA2YXYsdqp2LIg2K7YsduM2K8g2b7Ysdiv24zYsyDaqduM2LQ"
+      }
+    },
+    {
+      "title": "ساحل کشتی یونانی کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 16,
+      "search": {
+        "keyword": "all",
+        "poi": "mTXUQRSiV0IeDQAA2LPYp9it2YQg2qnYtNiq24wg24zZiNmG2KfZhtuMINqp24zYtA"
+      }
+    },
+    {
+      "title": "ساحل مرجان کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 12,
+      "search": {
+        "keyword": "all",
+        "poi": "ezXUQVcqWEIZDQAA2LPYp9it2YQg2YXYsdis2KfZhiDaqduM2LQ"
+      }
+    },
+    {
+      "title": "مرکز همایش‌های بین‌المللی کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 11,
+      "search": {
+        "keyword": "all",
+        "poi": "NlvUQXgWWEIrCgAA2YXYsdqp2LIg2YfZhdin24zYtOKAjNmH2KfbjCDYqNuM2YbigIzYp9mE2YXZhNmE24wg2qnbjNi0"
+      }
+    },
+    {
+      "title": "اسکله تفریحی کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 9,
+      "search": {
+        "keyword": "all",
+        "poi": "k2LUQQMaWEIdDQAA2KfYs9qp2YTZhyDYqtmB2LHbjNit24wg2qnbjNi0"
+      }
+    },
+    {
+      "title": "تله‌کابین کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 9,
+      "search": {
+        "keyword": "all",
+        "poi": "vmDUQQ4XWEIlEQAA2KrZhNmH4oCM2qnYp9io24zZhiDaqduM2LQ"
+      }
+    },
+    {
+      "title": "بولینگ کیش",
+      "subtitle": "استان هرمزگان، کیش",
+      "kind": "poi",
+      "listings": 8,
+      "search": {
+        "keyword": "all",
+        "poi": "i2zUQXnpV0LsEgAA2KjZiNmE24zZhtqvINqp24zYtA"
+      }
+    },
+    {
+      "title": "همه نتایج",
+      "kind": "text search",
+      "search": {
+        "keyword": "all",
+        "name_contains": "کیش"
+      }
+    }
+  ]
+}

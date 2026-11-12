@@ -1,0 +1,209 @@
+{
+  "destinations": [
+    {
+      "title": "اصفهان",
+      "subtitle": "استان اصفهان",
+      "kind": "city",
+      "listings": 1050,
+      "search": {
+        "keyword": "city-isfahan"
+      }
+    },
+    {
+      "title": "استان اصفهان",
+      "kind": "province",
+      "listings": 2573,
+      "search": {
+        "keyword": "province-isfahan"
+      }
+    },
+    {
+      "title": "اصفهان سیتی سنتر",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 1,
+      "search": {
+        "keyword": "all",
+        "poi": "DDUCQjDBTkKTCAAA2KfYtdmB2YfYp9mGINiz24zYqtuMINiz2YbYqtix"
+      }
+    },
+    {
+      "title": "جلفا اصفهان",
+      "kind": "area",
+      "search": {
+        "keyword": "all",
+        "areas": [
+          "jolfa_esfahan"
+        ]
+      }
+    },
+    {
+      "title": "موزه آب اصفهان",
+      "subtitle": "استان یزد، یزد",
+      "kind": "poi",
+      "listings": 348,
+      "search": {
+        "keyword": "all",
+        "poi": "Ain_QUl5WULeEgAA2YXZiNiy2Ycg2KLYqCDYp9i12YHZh9in2YY"
+      }
+    },
+    {
+      "title": "خیابان فلسطین اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 284,
+      "search": {
+        "keyword": "all",
+        "poi": "16MCQj-1TkLBBwAA2K7bjNin2KjYp9mGINmB2YTYs9i324zZhiDYp9i12YHZh9in2YY"
+      }
+    },
+    {
+      "title": "خیابان میرداماد اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 284,
+      "search": {
+        "keyword": "all",
+        "poi": "16MCQj-1TkKwBwAA2K7bjNin2KjYp9mGINmF24zYsdiv2KfZhdin2K8g2KfYtdmB2YfYp9mG"
+      }
+    },
+    {
+      "title": "پل میعاد اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 284,
+      "search": {
+        "keyword": "all",
+        "poi": "16MCQj-1TkKMCgAA2b7ZhCDZhduM2LnYp9ivINin2LXZgdmH2KfZhg"
+      }
+    },
+    {
+      "title": "بلوار آیینه‌خانه اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 284,
+      "search": {
+        "keyword": "all",
+        "poi": "16MCQj-1TkK5BwAA2KjZhNmI2KfYsSDYotuM24zZhtmH4oCM2K7Yp9mG2Ycg2KfYtdmB2YfYp9mG"
+      }
+    },
+    {
+      "title": "خیابان امام خمینی اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 284,
+      "search": {
+        "keyword": "all",
+        "poi": "16MCQj-1TkK8BwAA2K7bjNin2KjYp9mGINin2YXYp9mFINiu2YXbjNmG24wg2KfYtdmB2YfYp9mG"
+      }
+    },
+    {
+      "title": "خیابان شیخ صدوق اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 284,
+      "search": {
+        "keyword": "all",
+        "poi": "16MCQj-1TkK3BwAA2K7bjNin2KjYp9mGINi024zYriDYtdiv2YjZgiDYp9i12YHZh9in2YY"
+      }
+    },
+    {
+      "title": "قلعه کوه‌سار اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 284,
+      "search": {
+        "keyword": "all",
+        "poi": "16MCQj-1TkIjCwAA2YLZhNi52Ycg2qnZiNmH4oCM2LPYp9ixINin2LXZgdmH2KfZhg"
+      }
+    },
+    {
+      "title": "بازار بزرگ اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 274,
+      "search": {
+        "keyword": "all",
+        "poi": "m6YCQgC2TkKWCAAA2KjYp9iy2KfYsSDYqNiy2LHaryDYp9i12YHZh9in2YY"
+      }
+    },
+    {
+      "title": "بازار قیصریه اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 274,
+      "search": {
+        "keyword": "all",
+        "poi": "m6YCQgC2TkKSCAAA2KjYp9iy2KfYsSDZgtuM2LXYsduM2Ycg2KfYtdmB2YfYp9mG"
+      }
+    },
+    {
+      "title": "بیمارستان خورشید-نور اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 267,
+      "search": {
+        "keyword": "all",
+        "poi": "ap0CQqGzTkLvEAAA2KjbjNmF2KfYsdiz2KrYp9mGINiu2YjYsdi024zYry3ZhtmI2LEg2KfYtdmB2YfYp9mG"
+      }
+    },
+    {
+      "title": "مرکز همایش‌های هتل عباسی اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 266,
+      "search": {
+        "keyword": "all",
+        "poi": "y6ECQky3TkIPCgAA2YXYsdqp2LIg2YfZhdin24zYtOKAjNmH2KfbjCDZh9iq2YQg2LnYqNin2LPbjCDYp9i12YHZh9in2YY"
+      }
+    },
+    {
+      "title": "خیابان عبدالرزاق اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 254,
+      "search": {
+        "keyword": "all",
+        "poi": "16MCQn2_TkLABwAA2K7bjNin2KjYp9mGINi52KjYr9in2YTYsdiy2KfZgiDYp9i12YHZh9in2YY"
+      }
+    },
+    {
+      "title": "خیابان مسجد سید اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 254,
+      "search": {
+        "keyword": "all",
+        "poi": "16MCQn2_TkLCBwAA2K7bjNin2KjYp9mGINmF2LPYrNivINiz24zYryDYp9i12YHZh9in2YY"
+      }
+    },
+    {
+      "title": "استانداری اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 252,
+      "search": {
+        "keyword": "all",
+        "poi": "x58CQuWwTkLNDQAA2KfYs9iq2KfZhtiv2KfYsduMINin2LXZgdmH2KfZhg"
+      }
+    },
+    {
+      "title": "هتل قصر منشی اصفهان",
+      "subtitle": "استان اصفهان، اصفهان",
+      "kind": "poi",
+      "listings": 227,
+      "search": {
+        "keyword": "all",
+        "poi": "95sCQu25TkJ2AQAA2YfYqtmEINmC2LXYsSDZhdmG2LTbjCDYp9i12YHZh9in2YY"
+      }
+    },
+    {
+      "title": "همه نتایج",
+      "kind": "text search",
+      "search": {
+        "keyword": "all",
+        "name_contains": "اصفهان"
+      }
+    }
+  ]
+}

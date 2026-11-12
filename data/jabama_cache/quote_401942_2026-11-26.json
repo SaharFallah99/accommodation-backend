@@ -1,0 +1,57 @@
+{
+  "code": 401942,
+  "title": "ویلا دوخوابه جکوزی دار سرای امیران دوهزار",
+  "check_in": "2026-11-26 14:30",
+  "check_out": "2026-11-29 12:00",
+  "nights": 3,
+  "guests": 2,
+  "payable": 12540000,
+  "price_before_discount": 13780000,
+  "discount": 1240000,
+  "discount_pct": 9,
+  "installment_4x": 3135000,
+  "instant_booking": true,
+  "per_night": [
+    {
+      "date": "2026-11-26",
+      "day_type": "custom",
+      "night": 6060000,
+      "extra_guest_each": 600000,
+      "total": 6060000
+    },
+    {
+      "date": "2026-11-27",
+      "day_type": "custom",
+      "night": 3810000,
+      "extra_guest_each": 600000,
+      "total": 3810000
+    },
+    {
+      "date": "2026-11-28",
+      "day_type": "custom",
+      "night": 3910000,
+      "extra_guest_each": 600000,
+      "total": 3910000
+    }
+  ],
+  "cancellation": {
+    "policy": "سخت‌گیرانه",
+    "phases": [
+      {
+        "when": "تا 1 آذر",
+        "until": "2026-11-22",
+        "deduction": "20٪ مبلغ شب اول + 20٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 1 آذر تا 5 آذر",
+        "until": "2026-11-26",
+        "deduction": "100٪ مبلغ شب اول + 50٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 5 آذر تا 8 آذر",
+        "until": "2026-11-29",
+        "deduction": "100٪ مبلغ شب‌های سپری شده + 100٪ مبلغ شب‌های باقیمانده"
+      }
+    ]
+  }
+}

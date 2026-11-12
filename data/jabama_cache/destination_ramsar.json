@@ -1,0 +1,204 @@
+{
+  "destinations": [
+    {
+      "title": "رامسر",
+      "subtitle": "استان مازندران",
+      "kind": "city",
+      "listings": 2922,
+      "search": {
+        "keyword": "city-ramsar"
+      }
+    },
+    {
+      "title": "چشمه‌های آب گرم رامسر",
+      "subtitle": "استان اردبیل، سرعین",
+      "kind": "poi",
+      "listings": 183,
+      "search": {
+        "keyword": "all",
+        "poi": "X5sYQs9MQEK2BQAA2obYtNmF2YfigIzZh9in24wg2KLYqCDar9ix2YUg2LHYp9mF2LPYsQ"
+      }
+    },
+    {
+      "title": "باغ پرندگان رامسر",
+      "subtitle": "استان مازندران، رامسر",
+      "kind": "poi",
+      "listings": 145,
+      "search": {
+        "keyword": "all",
+        "poi": "ErUTQoCSSkKSEgAA2KjYp9i6INm-2LHZhtiv2q_Yp9mGINix2KfZhdiz2LE"
+      }
+    },
+    {
+      "title": "شهر ساحلی رامسر",
+      "subtitle": "استان مازندران، رامسر",
+      "kind": "poi",
+      "listings": 145,
+      "search": {
+        "keyword": "all",
+        "poi": "ErUTQoCSSkLcEQAA2LTZh9ixINiz2KfYrdmE24wg2LHYp9mF2LPYsQ"
+      }
+    },
+    {
+      "title": "چشمه ثنا رامسر",
+      "kind": "poi",
+      "listings": 120,
+      "search": {
+        "keyword": "all",
+        "poi": "j8ITQtejSkLVAAAA2obYtNmF2Ycg2KvZhtinINix2KfZhdiz2LE"
+      }
+    },
+    {
+      "title": "خیابان امام خمینی رامسر",
+      "kind": "poi",
+      "listings": 120,
+      "search": {
+        "keyword": "all",
+        "poi": "j8ITQtejSkIJCAAA2K7bjNin2KjYp9mGINin2YXYp9mFINiu2YXbjNmG24wg2LHYp9mF2LPYsQ"
+      }
+    },
+    {
+      "title": "پارک جنگلی گلستان رامسر",
+      "kind": "poi",
+      "listings": 120,
+      "search": {
+        "keyword": "all",
+        "poi": "j8ITQtejSkLtAgAA2b7Yp9ix2qkg2KzZhtqv2YTbjCDar9mE2LPYqtin2YYg2LHYp9mF2LPYsQ"
+      }
+    },
+    {
+      "title": "چشمه عزیز گرما رامسر",
+      "kind": "poi",
+      "listings": 120,
+      "search": {
+        "keyword": "all",
+        "poi": "j8ITQtejSkLSAAAA2obYtNmF2Ycg2LnYstuM2LIg2q_YsdmF2Kcg2LHYp9mF2LPYsQ"
+      }
+    },
+    {
+      "title": "چشمه محمود گرما رامسر",
+      "kind": "poi",
+      "listings": 120,
+      "search": {
+        "keyword": "all",
+        "poi": "j8ITQtejSkLRAAAA2obYtNmF2Ycg2YXYrdmF2YjYryDar9ix2YXYpyDYsdin2YXYs9ix"
+      }
+    },
+    {
+      "title": "چشمه‌های گرماب رامسر",
+      "kind": "poi",
+      "listings": 120,
+      "search": {
+        "keyword": "all",
+        "poi": "j8ITQtejSkLQAAAA2obYtNmF2YfigIzZh9in24wg2q_YsdmF2KfYqCDYsdin2YXYs9ix"
+      }
+    },
+    {
+      "title": "چشمه‌های آب گرم رامسر",
+      "kind": "poi",
+      "listings": 120,
+      "search": {
+        "keyword": "all",
+        "poi": "j8ITQtejSkKjAAAA2obYtNmF2YfigIzZh9in24wg2KLYqCDar9ix2YUg2LHYp9mF2LPYsQ"
+      }
+    },
+    {
+      "title": "ساحل رامسر",
+      "subtitle": "استان مازندران، رامسر",
+      "kind": "poi",
+      "listings": 93,
+      "search": {
+        "keyword": "all",
+        "poi": "C8oTQrqPSkLTDAAA2LPYp9it2YQg2LHYp9mF2LPYsQ"
+      }
+    },
+    {
+      "title": "فرودگاه رامسر",
+      "subtitle": "استان مازندران، رامسر",
+      "kind": "poi",
+      "listings": 58,
+      "search": {
+        "keyword": "all",
+        "poi": "oZ4TQsy6SkJLEgAA2YHYsdmI2K_ar9in2Ycg2LHYp9mF2LPYsQ"
+      }
+    },
+    {
+      "title": "تله‌کابین رامسر",
+      "subtitle": "استان مازندران، رامسر",
+      "kind": "poi",
+      "listings": 49,
+      "search": {
+        "keyword": "all",
+        "poi": "39cTQsFmSkJLDgAA2KrZhNmH4oCM2qnYp9io24zZhiDYsdin2YXYs9ix"
+      }
+    },
+    {
+      "title": "پارک جنگلی صفارود رامسر",
+      "subtitle": "استان مازندران، رامسر",
+      "kind": "poi",
+      "listings": 49,
+      "search": {
+        "keyword": "all",
+        "poi": "39cTQsFmSkIVBgAA2b7Yp9ix2qkg2KzZhtqv2YTbjCDYtdmB2KfYsdmI2K8g2LHYp9mF2LPYsQ"
+      }
+    },
+    {
+      "title": "سواحل رامسر",
+      "subtitle": "استان مازندران، رامسر",
+      "kind": "poi",
+      "listings": 46,
+      "search": {
+        "keyword": "all",
+        "poi": "oJoTQtGiSkI1BAAA2LPZiNin2K3ZhCDYsdin2YXYs9ix"
+      }
+    },
+    {
+      "title": "روستای فرحزاد رامسر",
+      "subtitle": "استان مازندران، رامسر",
+      "kind": "poi",
+      "listings": 45,
+      "search": {
+        "keyword": "all",
+        "poi": "XI8TQtejSkLKBQAA2LHZiNiz2KrYp9uMINmB2LHYrdiy2KfYryDYsdin2YXYs9ix"
+      }
+    },
+    {
+      "title": "روستای جواهرده رامسر",
+      "subtitle": "استان سمنان، بسطام",
+      "kind": "poi",
+      "listings": 43,
+      "search": {
+        "keyword": "all",
+        "poi": "n_ASQkAjXEJ0BQAA2LHZiNiz2KrYp9uMINis2YjYp9mH2LHYr9mHINix2KfZhdiz2LE"
+      }
+    },
+    {
+      "title": "تله‌کابین رامسر فاز ۲",
+      "subtitle": "استان مازندران، رامسر",
+      "kind": "poi",
+      "listings": 31,
+      "search": {
+        "keyword": "all",
+        "poi": "IcgTQiRmSkIzEQAA2KrZhNmH4oCM2qnYp9io24zZhiDYsdin2YXYs9ixINmB2KfYsiDbsg"
+      }
+    },
+    {
+      "title": "میدان مرکزی رامسر",
+      "subtitle": "استان مازندران، تنکابن",
+      "kind": "poi",
+      "listings": 17,
+      "search": {
+        "keyword": "all",
+        "poi": "lkMTQh-FS0JkCQAA2YXbjNiv2KfZhiDZhdix2qnYstuMINix2KfZhdiz2LE"
+      }
+    },
+    {
+      "title": "همه نتایج",
+      "kind": "text search",
+      "search": {
+        "keyword": "all",
+        "name_contains": "رامسر"
+      }
+    }
+  ]
+}

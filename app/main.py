@@ -178,7 +178,16 @@ async def list_accommodations(
 
 @app.get("/accommodations/{accommodation_id}", response_model=AccommodationRead)
 async def get_accommodation(accommodation_id: int, db: AsyncSession = Depends(get_db)):
-    accommodation = await db.get(Accommodation, accommodation_id)
+    result = await db.execute(
+        select(Accommodation)
+        .options(
+            selectinload(Accommodation.location),
+            selectinload(Accommodation.amenities),
+            selectinload(Accommodation.images),
+        )
+        .where(Accommodation.id == accommodation_id)
+    )
+    accommodation = result.scalar_one_or_none()
     if accommodation is None:
         raise HTTPException(status_code=404, detail="Accommodation not found")
     return accommodation
@@ -229,8 +238,17 @@ async def create_accommodation(
         accommodation.amenities = list(amenities.scalars().all())
 
     await db.commit()
-    await db.refresh(accommodation)
-    return accommodation
+
+    result = await db.execute(
+        select(Accommodation)
+        .options(
+            selectinload(Accommodation.location),
+            selectinload(Accommodation.amenities),
+            selectinload(Accommodation.images),
+        )
+        .where(Accommodation.id == accommodation.id)
+    )
+    return result.scalar_one()
 
 
 @app.post("/accommodations/{accommodation_id}/availability", response_model=AvailabilityRead)

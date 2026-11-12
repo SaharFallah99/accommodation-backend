@@ -1,0 +1,57 @@
+{
+  "code": 510734,
+  "title": "آپارتمان دوخوابه تینا 2",
+  "check_in": "2026-11-26 14:00",
+  "check_out": "2026-11-29 12:00",
+  "nights": 3,
+  "guests": 2,
+  "payable": 9650000,
+  "price_before_discount": 9650000,
+  "discount": 0,
+  "discount_pct": 0,
+  "installment_4x": 2413000,
+  "instant_booking": true,
+  "per_night": [
+    {
+      "date": "2026-11-26",
+      "day_type": "custom",
+      "night": 3350000,
+      "extra_guest_each": 400000,
+      "total": 3350000
+    },
+    {
+      "date": "2026-11-27",
+      "day_type": "custom",
+      "night": 3150000,
+      "extra_guest_each": 400000,
+      "total": 3150000
+    },
+    {
+      "date": "2026-11-28",
+      "day_type": "custom",
+      "night": 3150000,
+      "extra_guest_each": 400000,
+      "total": 3150000
+    }
+  ],
+  "cancellation": {
+    "policy": "سهل گیرانه",
+    "phases": [
+      {
+        "when": "تا 3 آذر",
+        "until": "2026-11-24",
+        "deduction": "پرداخت کامل وجه به مهمان"
+      },
+      {
+        "when": "از 3 آذر تا 5 آذر",
+        "until": "2026-11-26",
+        "deduction": "20٪ مبلغ شب اول + 10٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 5 آذر تا 8 آذر",
+        "until": "2026-11-29",
+        "deduction": "100٪ مبلغ شب‌های سپری شده + 20٪ مبلغ شب‌های باقیمانده"
+      }
+    ]
+  }
+}

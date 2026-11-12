@@ -1,0 +1,214 @@
+{
+  "destinations": [
+    {
+      "title": "شیراز",
+      "subtitle": "استان فارس",
+      "kind": "city",
+      "listings": 1299,
+      "search": {
+        "keyword": "city-shiraz"
+      }
+    },
+    {
+      "title": "نزدیک شاهچراغ شیراز",
+      "kind": "area",
+      "listings": 421,
+      "search": {
+        "keyword": "all",
+        "areas": [
+          "shah-cheragh-shiraz"
+        ]
+      }
+    },
+    {
+      "title": "وصال شیرازی تهران",
+      "kind": "area",
+      "listings": 21,
+      "search": {
+        "keyword": "all",
+        "areas": [
+          "vesal_e_shirazi_tehran"
+        ]
+      }
+    },
+    {
+      "title": "حافظیه شیراز",
+      "kind": "area",
+      "listings": 5,
+      "search": {
+        "keyword": "all",
+        "areas": [
+          "hafezieh_shiraz"
+        ]
+      }
+    },
+    {
+      "title": "سرای مشیر شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 494,
+      "search": {
+        "keyword": "all",
+        "poi": "YOXsQRsvUkKRCAAA2LPYsdin24wg2YXYtNuM2LEg2LTbjNix2KfYsg"
+      }
+    },
+    {
+      "title": "میدان شهداء شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 454,
+      "search": {
+        "keyword": "all",
+        "poi": "ZfDsQUIsUkItCQAA2YXbjNiv2KfZhiDYtNmH2K_Yp9ihINi024zYsdin2LI"
+      }
+    },
+    {
+      "title": "ارگ کریم خان شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 446,
+      "search": {
+        "keyword": "all",
+        "poi": "-PDsQcItUkLRCgAA2KfYsdqvINqp2LHbjNmFINiu2KfZhiDYtNuM2LHYp9iy"
+      }
+    },
+    {
+      "title": "بازار وکیل شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 430,
+      "search": {
+        "keyword": "all",
+        "poi": "CuzsQSYwUkKQCAAA2KjYp9iy2KfYsSDZiNqp24zZhCDYtNuM2LHYp9iy"
+      }
+    },
+    {
+      "title": "هتل زندیه شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 413,
+      "search": {
+        "keyword": "all",
+        "poi": "BvXsQfItUkJ5AQAA2YfYqtmEINiy2YbYr9uM2Ycg2LTbjNix2KfYsg"
+      }
+    },
+    {
+      "title": "مسجد جامع عتیق شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 410,
+      "search": {
+        "keyword": "all",
+        "poi": "dd3sQe0tUkJsEAAA2YXYs9is2K8g2KzYp9mF2Lkg2LnYqtuM2YIg2LTbjNix2KfYsg"
+      }
+    },
+    {
+      "title": "پارک آبی شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 371,
+      "search": {
+        "keyword": "all",
+        "poi": "Jd3sQXgrUkL8DQAA2b7Yp9ix2qkg2KLYqNuMINi024zYsdin2LI"
+      }
+    },
+    {
+      "title": "هتل سنتی نیایش شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 330,
+      "search": {
+        "keyword": "all",
+        "poi": "qObsQR4oUkJ_AQAA2YfYqtmEINiz2YbYqtuMINmG24zYp9uM2LQg2LTbjNix2KfYsg"
+      }
+    },
+    {
+      "title": "خیابان لطفعلی خان زند شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 322,
+      "search": {
+        "keyword": "all",
+        "poi": "SOHsQfYoUkLNBwAA2K7bjNin2KjYp9mGINmE2LfZgdi52YTbjCDYrtin2YYg2LLZhtivINi024zYsdin2LI"
+      }
+    },
+    {
+      "title": "هتل کریم خان شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 321,
+      "search": {
+        "keyword": "all",
+        "poi": "0fnsQRAqUkJ-AQAA2YfYqtmEINqp2LHbjNmFINiu2KfZhiDYtNuM2LHYp9iy"
+      }
+    },
+    {
+      "title": "خیابان عدل شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 302,
+      "search": {
+        "keyword": "all",
+        "poi": "w_XsQfYoUkLVBwAA2K7bjNin2KjYp9mGINi52K_ZhCDYtNuM2LHYp9iy"
+      }
+    },
+    {
+      "title": "خیابان کریم‌خان زند شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 292,
+      "search": {
+        "keyword": "all",
+        "poi": "1_fsQd8lUkJsBwAA2K7bjNin2KjYp9mGINqp2LHbjNmF4oCM2K7Yp9mGINiy2YbYryDYtNuM2LHYp9iy"
+      }
+    },
+    {
+      "title": "خیابان شیرازی مشهد",
+      "subtitle": "استان خراسان رضوی، مشهد",
+      "kind": "poi",
+      "listings": 285,
+      "search": {
+        "keyword": "all",
+        "poi": "9igRQuF6bkLlBwAA2K7bjNin2KjYp9mGINi024zYsdin2LLbjCDZhdi02YfYrw"
+      }
+    },
+    {
+      "title": "بیمارستان قلب الزهرا شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 237,
+      "search": {
+        "keyword": "all",
+        "poi": "VcrsQWkwUkLnEAAA2KjbjNmF2KfYsdiz2KrYp9mGINmC2YTYqCDYp9mE2LLZh9ix2Kcg2LTbjNix2KfYsg"
+      }
+    },
+    {
+      "title": "هتل هما شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 166,
+      "search": {
+        "keyword": "all",
+        "poi": "NATtQeIpUkJ8AQAA2YfYqtmEINmH2YXYpyDYtNuM2LHYp9iy"
+      }
+    },
+    {
+      "title": "میدان امام حسین شیراز",
+      "subtitle": "استان فارس، شیراز",
+      "kind": "poi",
+      "listings": 138,
+      "search": {
+        "keyword": "all",
+        "poi": "_f7sQbMgUkIwCQAA2YXbjNiv2KfZhiDYp9mF2KfZhSDYrdiz24zZhiDYtNuM2LHYp9iy"
+      }
+    },
+    {
+      "title": "همه نتایج",
+      "kind": "text search",
+      "search": {
+        "keyword": "all",
+        "name_contains": "شیراز"
+      }
+    }
+  ]
+}

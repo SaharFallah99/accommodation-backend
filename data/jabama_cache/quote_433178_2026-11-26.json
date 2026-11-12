@@ -1,0 +1,57 @@
+{
+  "code": 433178,
+  "title": "کلبه دوخوابه جنگلی جکوزی دار تیکیش",
+  "check_in": "2026-11-26 14:00",
+  "check_out": "2026-11-29 12:00",
+  "nights": 3,
+  "guests": 2,
+  "payable": 10000000,
+  "price_before_discount": 10000000,
+  "discount": 0,
+  "discount_pct": 0,
+  "installment_4x": 2500000,
+  "instant_booking": true,
+  "per_night": [
+    {
+      "date": "2026-11-26",
+      "day_type": "custom",
+      "night": 3500000,
+      "extra_guest_each": 250000,
+      "total": 3500000
+    },
+    {
+      "date": "2026-11-27",
+      "day_type": "custom",
+      "night": 3250000,
+      "extra_guest_each": 250000,
+      "total": 3250000
+    },
+    {
+      "date": "2026-11-28",
+      "day_type": "custom",
+      "night": 3250000,
+      "extra_guest_each": 250000,
+      "total": 3250000
+    }
+  ],
+  "cancellation": {
+    "policy": "سخت‌گیرانه",
+    "phases": [
+      {
+        "when": "تا 1 آذر",
+        "until": "2026-11-22",
+        "deduction": "20٪ مبلغ شب اول + 20٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 1 آذر تا 5 آذر",
+        "until": "2026-11-26",
+        "deduction": "100٪ مبلغ شب اول + 50٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 5 آذر تا 8 آذر",
+        "until": "2026-11-29",
+        "deduction": "100٪ مبلغ شب‌های سپری شده + 100٪ مبلغ شب‌های باقیمانده"
+      }
+    ]
+  }
+}

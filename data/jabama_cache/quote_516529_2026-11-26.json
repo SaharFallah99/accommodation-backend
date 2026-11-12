@@ -1,0 +1,57 @@
+{
+  "code": 516529,
+  "title": "آپارتمان دوخوابه بهار واحد 3",
+  "check_in": "2026-11-26 14:00",
+  "check_out": "2026-11-29 12:00",
+  "nights": 3,
+  "guests": 2,
+  "payable": 13386000,
+  "price_before_discount": 13800000,
+  "discount": 414000,
+  "discount_pct": 3,
+  "installment_4x": 3347000,
+  "instant_booking": true,
+  "per_night": [
+    {
+      "date": "2026-11-26",
+      "day_type": "custom",
+      "night": 4800000,
+      "extra_guest_each": 400000,
+      "total": 4800000
+    },
+    {
+      "date": "2026-11-27",
+      "day_type": "custom",
+      "night": 4500000,
+      "extra_guest_each": 400000,
+      "total": 4500000
+    },
+    {
+      "date": "2026-11-28",
+      "day_type": "custom",
+      "night": 4500000,
+      "extra_guest_each": 400000,
+      "total": 4500000
+    }
+  ],
+  "cancellation": {
+    "policy": "سهل گیرانه",
+    "phases": [
+      {
+        "when": "تا 3 آذر",
+        "until": "2026-11-24",
+        "deduction": "پرداخت کامل وجه به مهمان"
+      },
+      {
+        "when": "از 3 آذر تا 5 آذر",
+        "until": "2026-11-26",
+        "deduction": "20٪ مبلغ شب اول + 10٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 5 آذر تا 8 آذر",
+        "until": "2026-11-29",
+        "deduction": "100٪ مبلغ شب‌های سپری شده + 20٪ مبلغ شب‌های باقیمانده"
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "code": 591050,
+  "similar": [
+    {
+      "code": 595153,
+      "title": "آپارتمان دوخوابه دلگشاه",
+      "type": "apartment",
+      "city": "رامسر",
+      "province": "مازندران",
+      "region": "coastal",
+      "rating": 4.5,
+      "rating_count": 98,
+      "max_guests": 8,
+      "base_guests": 6,
+      "instant_booking": true,
+      "total_price": 8788000,
+      "price_before_discount": 12081000,
+      "discount_pct": 27,
+      "cheapest_night": 2895000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/2393849/db9941d3-15b4-45c7-ad91-072538375020.jpg",
+      "url": "https://www.jabama.com/stay/apartment-595153?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    },
+    {
+      "code": 429085,
+      "title": "آپارتمان دوخوابه ساحلی دریا 6",
+      "type": "apartment",
+      "city": "رامسر",
+      "province": "مازندران",
+      "region": "desert",
+      "rating": 4.8,
+      "rating_count": 69,
+      "max_guests": 5,
+      "base_guests": 4,
+      "instant_booking": false,
+      "total_price": 9500000,
+      "price_before_discount": 9500000,
+      "discount_pct": 0,
+      "cheapest_night": 3000000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/1484810/a2cfba03-4c25-4ea4-8efc-50bbcae52c55.jpeg",
+      "url": "https://www.jabama.com/stay/apartment-429085?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    },
+    {
+      "code": 805645,
+      "title": "آپارتمان دوخوابه طبیعت ۵",
+      "type": "apartment",
+      "city": "رامسر",
+      "province": "مازندران",
+      "region": "coastal",
+      "rating": 5.0,
+      "rating_count": 25,
+      "max_guests": 7,
+      "base_guests": 4,
+      "instant_booking": false,
+      "total_price": 14850000,
+      "price_before_discount": 14850000,
+      "discount_pct": 0,
+      "cheapest_night": 4790000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/2953099/eba98fbc-9cce-417f-a0c3-530ff3c180e5.jpg",
+      "url": "https://www.jabama.com/stay/apartment-805645?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    }
+  ],
+  "not_free_for_dates": [
+    453729,
+    571649,
+    485601
+  ]
+}

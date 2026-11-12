@@ -1,0 +1,57 @@
+{
+  "code": 671220,
+  "title": "ویلا سه خوابه ساحلی رویای آبی",
+  "check_in": "2026-11-26 14:00",
+  "check_out": "2026-11-29 12:00",
+  "nights": 3,
+  "guests": 2,
+  "payable": 42300000,
+  "price_before_discount": 47000000,
+  "discount": 4700000,
+  "discount_pct": 10,
+  "installment_4x": 10575000,
+  "instant_booking": true,
+  "per_night": [
+    {
+      "date": "2026-11-26",
+      "day_type": "custom",
+      "night": 17000000,
+      "extra_guest_each": 1500000,
+      "total": 17000000
+    },
+    {
+      "date": "2026-11-27",
+      "day_type": "custom",
+      "night": 15000000,
+      "extra_guest_each": 1500000,
+      "total": 15000000
+    },
+    {
+      "date": "2026-11-28",
+      "day_type": "custom",
+      "night": 15000000,
+      "extra_guest_each": 1500000,
+      "total": 15000000
+    }
+  ],
+  "cancellation": {
+    "policy": "سخت‌گیرانه",
+    "phases": [
+      {
+        "when": "تا 1 آذر",
+        "until": "2026-11-22",
+        "deduction": "20٪ مبلغ شب اول + 20٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 1 آذر تا 5 آذر",
+        "until": "2026-11-26",
+        "deduction": "100٪ مبلغ شب اول + 50٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 5 آذر تا 8 آذر",
+        "until": "2026-11-29",
+        "deduction": "100٪ مبلغ شب‌های سپری شده + 100٪ مبلغ شب‌های باقیمانده"
+      }
+    ]
+  }
+}

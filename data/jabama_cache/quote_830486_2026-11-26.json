@@ -1,0 +1,57 @@
+{
+  "code": 830486,
+  "title": "مجتمع اقامتگاهی گردشگری نیایش - واحد ۵",
+  "check_in": "2026-11-26 14:00",
+  "check_out": "2026-11-29 12:00",
+  "nights": 3,
+  "guests": 2,
+  "payable": 7803000,
+  "price_before_discount": 8390000,
+  "discount": 587000,
+  "discount_pct": 7,
+  "installment_4x": 1951000,
+  "instant_booking": true,
+  "per_night": [
+    {
+      "date": "2026-11-26",
+      "day_type": "custom",
+      "night": 2930000,
+      "extra_guest_each": 400000,
+      "total": 2930000
+    },
+    {
+      "date": "2026-11-27",
+      "day_type": "custom",
+      "night": 2730000,
+      "extra_guest_each": 400000,
+      "total": 2730000
+    },
+    {
+      "date": "2026-11-28",
+      "day_type": "custom",
+      "night": 2730000,
+      "extra_guest_each": 400000,
+      "total": 2730000
+    }
+  ],
+  "cancellation": {
+    "policy": "سخت‌گیرانه",
+    "phases": [
+      {
+        "when": "تا 1 آذر",
+        "until": "2026-11-22",
+        "deduction": "20٪ مبلغ شب اول + 20٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 1 آذر تا 5 آذر",
+        "until": "2026-11-26",
+        "deduction": "100٪ مبلغ شب اول + 50٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 5 آذر تا 8 آذر",
+        "until": "2026-11-29",
+        "deduction": "100٪ مبلغ شب‌های سپری شده + 100٪ مبلغ شب‌های باقیمانده"
+      }
+    ]
+  }
+}

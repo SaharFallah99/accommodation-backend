@@ -1,0 +1,121 @@
+{
+  "code": 330659,
+  "similar": [
+    {
+      "code": 330660,
+      "title": "بوم گردی ستایش - واحد ۱",
+      "type": "ecotourism",
+      "city": "شیراز",
+      "province": "فارس",
+      "region": "city",
+      "rating": 4.5,
+      "rating_count": 51,
+      "max_guests": 3,
+      "base_guests": 3,
+      "instant_booking": true,
+      "total_price": 3078000,
+      "price_before_discount": 3420000,
+      "discount_pct": 10,
+      "cheapest_night": 1010000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/1597056/d356e5c5-15dd-4b13-9243-9177828a9f77.jpg",
+      "url": "https://www.jabama.com/stay/ecotourism-330660?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    },
+    {
+      "code": 735963,
+      "title": "بوم گردی خانه منوچهر 1 - واحد یک خوابه بشری",
+      "type": "ecotourism",
+      "city": "شیراز",
+      "province": "فارس",
+      "region": "city",
+      "rating": 4.4,
+      "rating_count": 13,
+      "max_guests": 5,
+      "base_guests": 4,
+      "instant_booking": true,
+      "total_price": 3760000,
+      "price_before_discount": 3760000,
+      "discount_pct": 0,
+      "cheapest_night": 1210000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/9302508/afeb8a98-b828-432b-9601-c2e0a0a4c395.jpg",
+      "url": "https://www.jabama.com/stay/ecotourism-735963?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    },
+    {
+      "code": 377812,
+      "title": "بوم گردی عطاالدوله شیراز - واحد دوتخته 1",
+      "type": "ecotourism",
+      "city": "شیراز",
+      "province": "فارس",
+      "region": "city",
+      "rating": 3.7,
+      "rating_count": 36,
+      "max_guests": 2,
+      "base_guests": 2,
+      "instant_booking": false,
+      "total_price": 5850000,
+      "price_before_discount": 5850000,
+      "discount_pct": 0,
+      "cheapest_night": 1900000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/848465/a0b1733b-a948-4531-a684-385ea6029973.jpg",
+      "url": "https://www.jabama.com/stay/ecotourism-377812?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    },
+    {
+      "code": 469023,
+      "title": "بوم گردی زیبا - واحد 5",
+      "type": "ecotourism",
+      "city": "شیراز",
+      "province": "فارس",
+      "region": "city",
+      "rating": 4.6,
+      "rating_count": 21,
+      "max_guests": 2,
+      "base_guests": 2,
+      "instant_booking": true,
+      "total_price": 6221000,
+      "price_before_discount": 6990000,
+      "discount_pct": 11,
+      "cheapest_night": 2300000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/1136098/b15f81d9-e91e-4522-b29e-a2210b4aeccd.jpg",
+      "url": "https://www.jabama.com/stay/ecotourism-469023?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    },
+    {
+      "code": 469022,
+      "title": "بوم گردی زیبا - واحد 2",
+      "type": "ecotourism",
+      "city": "شیراز",
+      "province": "فارس",
+      "region": "city",
+      "rating": 4.5,
+      "rating_count": 30,
+      "max_guests": 3,
+      "base_guests": 3,
+      "instant_booking": true,
+      "total_price": 7500000,
+      "price_before_discount": 7500000,
+      "discount_pct": 0,
+      "cheapest_night": 2500000,
+      "nights": 3,
+      "image": "https://cdn.jabama.com/image/jabama-images/1136098/b15f81d9-e91e-4522-b29e-a2210b4aeccd.jpg",
+      "url": "https://www.jabama.com/stay/ecotourism-469022?checkIn=1405-09-05&checkOut=1405-09-08&passengersCount=2"
+    }
+  ],
+  "not_free_for_dates": [
+    90668
+  ],
+  "same_property": {
+    "keyword": "list-34081",
+    "units": [
+      {
+        "code": 330660,
+        "title": "ستایش - واحد ۱",
+        "max_guests": 3,
+        "from_per_night": 950000,
+        "rating": 4.5,
+        "rating_count": 51
+      }
+    ]
+  }
+}

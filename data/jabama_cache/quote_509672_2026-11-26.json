@@ -1,0 +1,57 @@
+{
+  "code": 509672,
+  "title": "ویلا دوخوابه استخردار ولیعصر",
+  "check_in": "2026-11-26 16:00",
+  "check_out": "2026-11-29 12:00",
+  "nights": 3,
+  "guests": 2,
+  "payable": 15714000,
+  "price_before_discount": 17080000,
+  "discount": 1366000,
+  "discount_pct": 8,
+  "installment_4x": 3929000,
+  "instant_booking": true,
+  "per_night": [
+    {
+      "date": "2026-11-26",
+      "day_type": "custom",
+      "night": 6120000,
+      "extra_guest_each": 320000,
+      "total": 6120000
+    },
+    {
+      "date": "2026-11-27",
+      "day_type": "custom",
+      "night": 5480000,
+      "extra_guest_each": 320000,
+      "total": 5480000
+    },
+    {
+      "date": "2026-11-28",
+      "day_type": "custom",
+      "night": 5480000,
+      "extra_guest_each": 320000,
+      "total": 5480000
+    }
+  ],
+  "cancellation": {
+    "policy": "متعادل",
+    "phases": [
+      {
+        "when": "تا 1 آذر",
+        "until": "2026-11-22",
+        "deduction": "10٪ مبلغ شب اول + 10٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 1 آذر تا 5 آذر",
+        "until": "2026-11-26",
+        "deduction": "50٪ مبلغ شب اول + 20٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 5 آذر تا 8 آذر",
+        "until": "2026-11-29",
+        "deduction": "100٪ مبلغ شب‌های سپری شده + 50٪ مبلغ شب‌های باقیمانده"
+      }
+    ]
+  }
+}

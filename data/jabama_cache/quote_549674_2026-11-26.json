@@ -1,0 +1,57 @@
+{
+  "code": 549674,
+  "title": "آپارتمان دوخوابه سلامت واحد 1",
+  "check_in": "2026-11-26 14:00",
+  "check_out": "2026-11-29 12:00",
+  "nights": 3,
+  "guests": 2,
+  "payable": 8560000,
+  "price_before_discount": 8560000,
+  "discount": 0,
+  "discount_pct": 0,
+  "installment_4x": 2140000,
+  "instant_booking": true,
+  "per_night": [
+    {
+      "date": "2026-11-26",
+      "day_type": "custom",
+      "night": 3080000,
+      "extra_guest_each": 300000,
+      "total": 3080000
+    },
+    {
+      "date": "2026-11-27",
+      "day_type": "custom",
+      "night": 2740000,
+      "extra_guest_each": 300000,
+      "total": 2740000
+    },
+    {
+      "date": "2026-11-28",
+      "day_type": "custom",
+      "night": 2740000,
+      "extra_guest_each": 300000,
+      "total": 2740000
+    }
+  ],
+  "cancellation": {
+    "policy": "متعادل",
+    "phases": [
+      {
+        "when": "تا 1 آذر",
+        "until": "2026-11-22",
+        "deduction": "10٪ مبلغ شب اول + 10٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 1 آذر تا 5 آذر",
+        "until": "2026-11-26",
+        "deduction": "50٪ مبلغ شب اول + 20٪ مبلغ شب‌های باقیمانده"
+      },
+      {
+        "when": "از 5 آذر تا 8 آذر",
+        "until": "2026-11-29",
+        "deduction": "100٪ مبلغ شب‌های سپری شده + 50٪ مبلغ شب‌های باقیمانده"
+      }
+    ]
+  }
+}
